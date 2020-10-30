@@ -5,8 +5,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Contact.css';
 import { faSmileWink } from '@fortawesome/free-solid-svg-icons';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+  function sendEmail(e) {
+    e.preventDefault();
+
+    emailjs.sendForm('gmail', 'template_fxtbdd8', e.target, 'user_s5u7zXqMxQAKJBUuMwa3o')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+  }
+
     return (
         <div>
             {/* Navbar start */}
@@ -65,7 +79,7 @@ const Contact = () => {
                     {/* <!-- contact form --> */}
 
                     <div className="col-md-6 wow pl-5 pr-0 animated fadeInRight" data-wow-delay=".2s">
-                        <form className="shake" role="form" method="POST" data-netlify="true" id="contactForm" name="contact-form" data-toggle="validator">
+                        <form className="shake" role="form" onSubmit={sendEmail} id="contactForm" name="contact" data-toggle="validator">
                             {/* <!-- Name --> */}
                             <div className="form-group label-floating">
                                 <label className="control-label" for="name">Name</label>
@@ -92,9 +106,9 @@ const Contact = () => {
                             </div>
                             {/* <!-- Form Submit --> */}
                             <div className="form-submit mt-5">
-                                <button className="btn contact ml-0" type="submit" id="form-submit"><i className="material-icons mdi mdi-message-outline"></i> Send Message ↗</button>
-                                {/* <div id="msgSubmit" className="h3 text-center hidden"></div>
-                                <div className="clearfix"></div> */}
+                                <button className="btn contact ml-0" type="submit" value="Send">Send Message ↗</button>
+                                <div id="msgSubmit" className="h3 text-center"></div>
+                                <div className="clearfix"></div>
                             </div>
                         </form>
                     </div>
