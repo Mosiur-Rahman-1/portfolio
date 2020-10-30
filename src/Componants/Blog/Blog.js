@@ -1,11 +1,11 @@
 import React from 'react';
-import './Home.css';
+import './Blog.css';
 import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodepen, faFacebookF, faGithub, faLinkedinIn, faMediumM, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright, faEnvelope} from '@fortawesome/free-solid-svg-icons';
+import { faCopyright} from '@fortawesome/free-solid-svg-icons';
 
-const Home = () => {
+const Blog = () => {
     return (
         <div>
             <header className="nav-bar">
@@ -31,28 +31,14 @@ const Home = () => {
                         <a href = 'https://medium.com/@masiurreheman01' target = "_blank"><FontAwesomeIcon icon = {faMediumM} className = "icon-nav"></FontAwesomeIcon></a>
                         <a href = 'https://www.facebook.com/masiur.reheman/' target = "_blank"><FontAwesomeIcon icon = {faFacebookF} className = "icon-nav"></FontAwesomeIcon></a>
                     </div>
-
-                    {/* <!-- Header part --> */}
-                        <section className="hero-section">
-                            <div>
-                                <div class="hero-line"></div>
-                                <p className = "text-white">Hello I'm</p>
-                                <h1 className="hero-text">Mosiurrahman<span class="color">.dev</span></h1>
-                                <h2 className="hero-para">Front End Web Developer</h2>
-                                <p className = "text-white">Creating websites is easy but creating a meaningfull solution is<br/> Hard cause that requires passion. That's where i focus on.</p>
-                            </div>
-                        </section>
-                        <div className="hero-scroll">
-                            <FontAwesomeIcon icon = {faEnvelope} className = "icon-nav mt-3"></FontAwesomeIcon>
-                            <p className="hero-scroll-text"><a href="#">masiurreheman01@gmail.com</a></p>
-                        </div>
-                        <div className="copyright">
-                                <FontAwesomeIcon icon = {faCopyright} className = "icon-nav mt-3"></FontAwesomeIcon>
-                                <p className="hero-scroll-text"><a href="#">mosiurrahman 2020</a></p>
-                        </div>
-                </main>
+            <h1 className = "comming-soon hero-text">Blog comming soon ...</h1>
+            <div className="copyright">
+                <FontAwesomeIcon icon = {faCopyright} className = "icon-nav mt-3"></FontAwesomeIcon>
+                <p className="hero-scroll-text"><a href="#">mosiurrahman 2020</a></p>
+            </div>
+            </main>
         </div>
     );
 };
 
-export default Home;
+export default Blog;

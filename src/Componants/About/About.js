@@ -14,7 +14,7 @@ const About = () => {
                     <ul className = "nav-links">
                         <Link to="/"><li><span class="color">.home</span></li></Link>
                         <Link to="/projects"><li>.projects</li></Link>
-                        <Link to="/"><li>.blog</li></Link>
+                        <Link to="/blog"><li>.blog</li></Link>
                         <a href="https://drive.google.com/file/d/1JbxAWNWg9Lta3Oh-sG2EVe-mxJ7YXaSK/view?usp=sharing" target= "_blank"><li>.resume</li></a>
                         <Link to="/about"><li>.about</li></Link>
                         <Link to="/contact"><li className = "contact">contact ↗</li></Link>

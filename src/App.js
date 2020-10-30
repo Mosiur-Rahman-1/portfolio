@@ -9,6 +9,7 @@ import {
 import About from "./Componants/About/About";
 import Projects from "./Componants/Porjects/Projects";
 import Contact from "./Componants/Contact/Contact";
+import Blog from "./Componants/Blog/Blog";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
         </Route>
         <Route path = "/projects">
           <Projects/>
+        </Route>
+        <Route path = "/blog">
+          <Blog/>
         </Route>
         <Route path = "/contact">
           <Contact/>

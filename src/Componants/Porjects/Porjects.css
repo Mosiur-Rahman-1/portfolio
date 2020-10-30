@@ -18,7 +18,7 @@
     height: 353px;
     width: 658px;
     background-color: #000;
-    background-image: url(https://assets.website-files.com/5d777426247be153c83f2462/5d77abfc4429622e298c47f7_case1.jpg);
+    background-image: url('../../images/creative-agency-site.jpg');
     background-size: cover;
     margin-bottom: 30px;
   }
@@ -28,6 +28,15 @@
     width: 460px;
     background-color: #000;
     background-image: url(https://assets.website-files.com/5d777426247be153c83f2462/5d8e1b2f74cf447926f7d78c_Tirol.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+
+.items-second-row {
+    height: 353px;
+    width: 658px;
+    background-color: #000;
+    background-image: url('../../images/travel-guru-booking.jpg');
     background-size: cover;
     margin-bottom: 30px;
   }

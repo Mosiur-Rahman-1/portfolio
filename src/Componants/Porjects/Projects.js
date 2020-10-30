@@ -12,10 +12,10 @@ const Projects = () => {
                     <ul className = "nav-links">
                         <Link to="/"><li><span class="color">.home</span></li></Link>
                         <Link to="/projects"><li><span className = "dot-color-projects">.</span>projects</li></Link>
-                        <Link to="/"><li><span className = "dot-color-blog">.</span>blog</li></Link>
+                        <Link to="/blog"><li><span className = "dot-color-blog">.</span>blog</li></Link>
                         <a href="https://drive.google.com/file/d/1JbxAWNWg9Lta3Oh-sG2EVe-mxJ7YXaSK/view?usp=sharing" target= "_blank"><li><span className = "dot-color-resume">.</span>resume</li></a>
                         <Link to="/about"><li><span className = "dot-color-about">.</span>about</li></Link>
-                        <Link to="/"><li className = "contact">contact ↗</li></Link>
+                        <Link to="/contact"><li className = "contact">contact ↗</li></Link>
                     </ul>
                 </nav>
             </header>
@@ -35,16 +35,16 @@ const Projects = () => {
                         <div>
                             <div class="hero-line"></div>
                             <h1 className="hero-text">I am proud of my<span className = "dot-color-projects">.work</span></h1>
-                            <h2 className="hero-para">Explore some examples of what i created</h2>
+                            <h2 className="hero-para">Explore some examples of what i have created</h2>
                         </div>
                     </section>
 
                     {/* <!-- Portfolio part --> */}
                     <section className = "portfolio-items pl-0 pr-0">
-                        <div className="items-first-row"></div>
+                        <a href="https://creative-agency-sites.netlify.app/" target = "_blank"><div className="items-first-row"></div></a>
                         <div className="items-first-second"></div>
                         <div className="items-first-second"></div>
-                        <div className="items-first-row"></div>
+                        <a href="https://travel-guru-booking.netlify.app/" target = "_blank"><div className="items-second-row"></div></a>
                     </section>
                 </main>
         </div>
