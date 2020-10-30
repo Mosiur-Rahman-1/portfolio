@@ -65,7 +65,7 @@ const Contact = () => {
                     {/* <!-- contact form --> */}
 
                     <div className="col-md-6 wow pl-5 pr-0 animated fadeInRight" data-wow-delay=".2s">
-                        <form className="shake" role="form" method="POST"  data-netlify="true" id="contactForm" name="contact-form" data-toggle="validator">
+                        <form className="shake" role="form" method="POST" data-netlify="true" id="contactForm" name="contact-form" data-toggle="validator">
                             {/* <!-- Name --> */}
                             <div className="form-group label-floating">
                                 <label className="control-label" for="name">Name</label>
@@ -93,8 +93,8 @@ const Contact = () => {
                             {/* <!-- Form Submit --> */}
                             <div className="form-submit mt-5">
                                 <button className="btn contact ml-0" type="submit" id="form-submit"><i className="material-icons mdi mdi-message-outline"></i> Send Message ↗</button>
-                                <div id="msgSubmit" className="h3 text-center hidden"></div>
-                                <div className="clearfix"></div>
+                                {/* <div id="msgSubmit" className="h3 text-center hidden"></div>
+                                <div className="clearfix"></div> */}
                             </div>
                         </form>
                     </div>
