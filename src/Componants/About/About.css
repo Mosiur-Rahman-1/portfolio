@@ -9,7 +9,8 @@ body {
 
     background-color: #000;
     /* font-family: monospace, Arial, Helvetica, sans-serif; */
-    font-family: 'Space Mono', monospace;
+    /* font-family: monospace, 'Space Mono'; */
+    font-family:'Space Mono', monospace;
 }
 
 .nav-bar{
@@ -77,10 +78,10 @@ ul li a {
     border-radius: 1px;
 }
 
-.social-icons-home {
+.social-icons-about {
     position: absolute;
     left: 80px;
-    top: 32%;
+    top: 31%;
     display: flex;
     flex-direction: column;
 }
@@ -98,7 +99,7 @@ ul li a {
     transition: 0.5s;
 }
 
-.main-body-home {
+.main-body-about {
 
     width: 100%;
     max-width: 1230px;
@@ -108,10 +109,10 @@ ul li a {
 
 }
 
-.hero-section{
+.hero-section-about {
 
     position: relative;
-    top: 150px;
+    top: 110px;
     bottom: 0;
     left: 0;
     right: 0;
@@ -142,7 +143,7 @@ ul li a {
     line-height: 32px;
 }
 
-.hero-scroll {
+/* .hero-scroll {
 
     position: absolute;
     left: 218px;
@@ -150,16 +151,16 @@ ul li a {
     display: flex;
     align-items: center;
 
-}
-.line-home {
+} */
+.line {
 
-    height: 20px;
+    height: 70px;
     width: 3px;
     background-color: #fff;
     
 }
 
-.hero-scroll-text a {
+/* .hero-scroll-text a {
 
     color: #fff;
     font-size: 18px;
@@ -168,7 +169,7 @@ ul li a {
     margin-left: 20px;
     text-decoration: none;
     
-}
+} */
 
 .color {
 
@@ -185,28 +186,13 @@ ul li a {
     100% {color: #ff2f61;}
   }
 
-.dot-color-projects {
 
-    color: orangered;
-}
-
-.dot-color-blog {
-    color: #5fe;
-}
-.dot-color-resume {
-    color: #fc3;
-}
-
-.dot-color-about {
-    color:#c2f;
-}
-
-.copyright {
-
-    position: absolute;
-    right: 0;
-    margin-right: 80px;
-    bottom: 0;
-    display: flex;
-    align-items: center;
-}
+  .skills span {
+    background: #4b5769;
+    margin-right: 5px;
+    margin-top: 5px;
+    border-radius: 1px;
+    padding: 3px 10px;
+    font-size: 13px;
+    height: 26px;
+  }

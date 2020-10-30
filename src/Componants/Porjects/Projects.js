@@ -1,23 +1,21 @@
-import React from 'react';
-import './Home.css';
-import {Link} from "react-router-dom";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Porjects.css';
 import { faCodepen, faFacebookF, faGithub, faLinkedinIn, faMediumM, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
-import { faCopyright, faEnvelope} from '@fortawesome/free-solid-svg-icons';
-
-const Home = () => {
+const Projects = () => {
     return (
         <div>
             <header className="nav-bar">
                 <nav className="main-menu">
                 <div className="logo"><Link to="/">Mosiur Rahman.</Link></div>
                     <ul className = "nav-links">
-                        <Link to="/"><li><span className="color">.home</span></li></Link>
+                        <Link to="/"><li><span class="color">.home</span></li></Link>
                         <Link to="/projects"><li><span className = "dot-color-projects">.</span>projects</li></Link>
                         <Link to="/"><li><span className = "dot-color-blog">.</span>blog</li></Link>
                         <a href="https://drive.google.com/file/d/1JbxAWNWg9Lta3Oh-sG2EVe-mxJ7YXaSK/view?usp=sharing" target= "_blank"><li><span className = "dot-color-resume">.</span>resume</li></a>
                         <Link to="/about"><li><span className = "dot-color-about">.</span>about</li></Link>
-                        <Link to="/contact"><li className = "contact">contact ↗</li></Link>
+                        <Link to="/"><li className = "contact">contact ↗</li></Link>
                     </ul>
                 </nav>
             </header>
@@ -33,26 +31,24 @@ const Home = () => {
                     </div>
 
                     {/* <!-- Header part --> */}
-                        <section className="hero-section">
-                            <div>
-                                <div class="hero-line"></div>
-                                <p className = "text-white">Hello I'm</p>
-                                <h1 className="hero-text">Mosiurrahman<span class="color">.dev</span></h1>
-                                <h2 className="hero-para">Front End Web Developer</h2>
-                                <p className = "text-white">Creating websites is easy but creating a meaningfull solution is<br/> Hard cause that requires passion. That's where i focus on.</p>
-                            </div>
-                        </section>
-                        <div className="hero-scroll">
-                            <FontAwesomeIcon icon = {faEnvelope} className = "icon-nav mt-3"></FontAwesomeIcon>
-                            <p className="hero-scroll-text"><a href="#">masiurreheman01@gmail.com</a></p>
+                    <section className="hero-section">
+                        <div>
+                            <div class="hero-line"></div>
+                            <h1 className="hero-text">I am proud of my<span className = "dot-color-projects">.work</span></h1>
+                            <h2 className="hero-para">Explore some examples of what i created</h2>
                         </div>
-                        <div className="copyright">
-                                <FontAwesomeIcon icon = {faCopyright} className = "icon-nav mt-3"></FontAwesomeIcon>
-                                <p className="hero-scroll-text"><a href="#">mosiurrahman 2020</a></p>
-                        </div>
+                    </section>
+
+                    {/* <!-- Portfolio part --> */}
+                    <section className = "portfolio-items pl-0 pr-0">
+                        <div className="items-first-row"></div>
+                        <div className="items-first-second"></div>
+                        <div className="items-first-second"></div>
+                        <div className="items-first-row"></div>
+                    </section>
                 </main>
         </div>
     );
 };
 
-export default Home;
+export default Projects;

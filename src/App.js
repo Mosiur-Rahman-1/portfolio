@@ -6,12 +6,24 @@ import {
   Switch,
   Route
 } from "react-router-dom";
+import About from "./Componants/About/About";
+import Projects from "./Componants/Porjects/Projects";
+import Contact from "./Componants/Contact/Contact";
 
 function App() {
   return (
     <div>
     <Router>
       <Switch>
+        <Route path = "/about">
+          <About/>
+        </Route>
+        <Route path = "/projects">
+          <Projects/>
+        </Route>
+        <Route path = "/contact">
+          <Contact/>
+        </Route>
         <Route path = "/">
           <Home/>
         </Route>

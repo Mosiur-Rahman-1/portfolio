@@ -1,0 +1,33 @@
+* {
+    /* outline: #ff2f61 1px solid; */
+}
+
+.portfolio-items {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    max-width: 1230px;
+    padding: 350px 40px 0px;
+    margin: 0 auto;
+  }
+
+.items-first-row {
+    height: 353px;
+    width: 658px;
+    background-color: #000;
+    background-image: url(https://assets.website-files.com/5d777426247be153c83f2462/5d77abfc4429622e298c47f7_case1.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+  }
+
+.items-first-second {
+    height: 353px;
+    width: 460px;
+    background-color: #000;
+    background-image: url(https://assets.website-files.com/5d777426247be153c83f2462/5d8e1b2f74cf447926f7d78c_Tirol.jpg);
+    background-size: cover;
+    margin-bottom: 30px;
+  }
