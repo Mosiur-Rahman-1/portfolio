@@ -12,6 +12,11 @@
 
 }
 
+.project-heading {
+
+  font-weight: 600;
+}
+
 .porfolio-first {
 
   height: 305px;
@@ -42,7 +47,8 @@
 
 .more-work {
   width: 100%;
-  padding-top: 20px;
+  padding-top: 30px;
+  padding-bottom: 50px;
 }
 
 .more-work-text {

@@ -1,7 +1,7 @@
 import React from 'react';
 import './About.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCodepen, faFacebookF, faGithub, faLinkedinIn, faMediumM, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
+import { faCodepen, faEnvira, faFacebookF, faGithub, faLinkedinIn, faMediumM, faNodeJs, faNpm, faReact, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 import Header from '../Header/Header';
 
@@ -53,12 +53,22 @@ const About = () => {
                             </div>
                             <h5 className = "mt-4"><span className = "dot-color-about">.</span>My tech stack</h5>
                             <div className = "d-flex">
-                                <div className="tech-stack">
-
+                                <div className = "tech-stack text-center">
+                                    <FontAwesomeIcon icon = {faReact} className = "icon-about-stack tex-center mt-4 mb-2"></FontAwesomeIcon>
+                                    <p>react.js</p>
                                 </div>
-                                <div className="tech-stack"></div>
-                                <div className="tech-stack"></div>
-                                <div className="tech-stack"></div>
+                                <div className = "tech-stack text-center">
+                                    <FontAwesomeIcon icon = {faNodeJs} className = "icon-about-stack tex-center mt-4 mb-2"></FontAwesomeIcon>
+                                    <p>node.js</p>
+                                </div>
+                                <div className = "tech-stack text-center">
+                                    <FontAwesomeIcon icon = {faEnvira} className = "icon-about-stack tex-center mt-4 mb-2"></FontAwesomeIcon>
+                                    <p>mongoDB</p>
+                                </div>
+                                <div className = "tech-stack text-center">
+                                    <FontAwesomeIcon icon = {faNpm} className = "icon-about-stack tex-center mt-4 mb-2"></FontAwesomeIcon>
+                                    <p>npm</p>
+                                </div>
                             </div>
                         </div>
                     </section>

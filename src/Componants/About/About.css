@@ -196,11 +196,20 @@ ul li a {
     font-size: 13px;
     height: 26px;
   }
+.icon-about-stack {
+
+    font-size: 70px;
+    color: #b923ff;
+}
+
+.icon-about-stack:hover {
+    color: #fff;
+}
 
 .tech-stack {
 
-    height: 140px;
-    width: 250px;
-    background-color: #fff;
+    height: 145px;
+    width: 150px;
+    background-color: rgb(39, 39, 39);
     margin-left: 10px;
 }
