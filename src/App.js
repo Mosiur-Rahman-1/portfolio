@@ -11,19 +11,20 @@ import Projects from "./Componants/Porjects/Projects";
 import Contact from "./Componants/Contact/Contact";
 import Blog from "./Componants/Blog/Blog";
 
+
 function App() {
   return (
     <div>
     <Router>
       <Switch>
-        <Route path = "/about">
-          <About/>
-        </Route>
         <Route path = "/projects">
           <Projects/>
         </Route>
         <Route path = "/blog">
           <Blog/>
+        </Route>
+        <Route path = "/about">
+          <About/>
         </Route>
         <Route path = "/contact">
           <Contact/>

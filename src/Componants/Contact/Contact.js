@@ -2,10 +2,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCodepen, faFacebookF, faGithub, faLinkedinIn, faMediumM, faStackOverflow } from '@fortawesome/free-brands-svg-icons';
 import { faCopyright} from '@fortawesome/free-solid-svg-icons';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import './Contact.css';
 import { faSmileWink } from '@fortawesome/free-solid-svg-icons';
 import emailjs from 'emailjs-com';
+import Header from '../Header/Header';
 
 const Contact = () => {
 
@@ -24,30 +24,17 @@ const Contact = () => {
     return (
         <div>
             {/* Navbar start */}
-            <header className="nav-bar">
-                <nav className="main-menu">
-                <div className="logo"><Link to="/">Mosiur Rahman.</Link></div>
-                    <ul className = "nav-links">
-                        <Link to="/"><li><span className="color">.home</span></li></Link>
-                        <Link to="/projects"><li><span className = "dot-color-projects">.</span>projects</li></Link>
-                        <Link to="/blog"><li><span className = "dot-color-blog">.</span>blog</li></Link>
-                        <a href="https://drive.google.com/file/d/1JbxAWNWg9Lta3Oh-sG2EVe-mxJ7YXaSK/view?usp=sharing" target= "_blank"><li><span className = "dot-color-resume">.</span>resume</li></a>
-                        <Link to="/about"><li><span className = "dot-color-about">.</span>about</li></Link>
-                        <Link to="/contact"><li className = "contact">contact ↗</li></Link>
-                    </ul>
-                </nav>
-            </header>
-
+            <Header></Header>
 
             {/* Main body start */}
             <main className="main-body-home">
                 <div className = "social-icons-contact">
-                        <a href = 'https://github.com/Mosiur-Rahman-1' target = "_blank"><FontAwesomeIcon icon = {faGithub} className = "icon-nav"></FontAwesomeIcon></a>
-                        <a href = 'https://www.linkedin.com/in/mosiur-rahaman/' target = "_blank"><FontAwesomeIcon icon = {faLinkedinIn} className = "icon-nav"></FontAwesomeIcon></a>
-                        <a href = 'https://stackoverflow.com/users/13975652/mosiur-rahaman' target = "_blank"><FontAwesomeIcon icon = {faStackOverflow} className = "icon-nav"></FontAwesomeIcon></a>
-                        <a href = 'https://codepen.io/mosiur-rahman-1' target = "_blank"><FontAwesomeIcon icon = {faCodepen} className = "icon-nav"></FontAwesomeIcon></a>
-                        <a href = 'https://medium.com/@masiurreheman01' target = "_blank"><FontAwesomeIcon icon = {faMediumM} className = "icon-nav"></FontAwesomeIcon></a>
-                        <a href = 'https://www.facebook.com/masiur.reheman/' target = "_blank"><FontAwesomeIcon icon = {faFacebookF} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://github.com/Mosiur-Rahman-1' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faGithub} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://www.linkedin.com/in/mosiur-rahaman/' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faLinkedinIn} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://stackoverflow.com/users/13975652/mosiur-rahaman' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faStackOverflow} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://codepen.io/mosiur-rahman-1' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faCodepen} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://medium.com/@masiurreheman01' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faMediumM} className = "icon-nav"></FontAwesomeIcon></a>
+                        <a href = 'https://www.facebook.com/masiur.reheman/' rel="noreferrer" target = "_blank"><FontAwesomeIcon icon = {faFacebookF} className = "icon-nav"></FontAwesomeIcon></a>
                 </div>
 
             {/* <!-- Contact Us Section --> */}
@@ -68,18 +55,11 @@ const Contact = () => {
                         <div className="find-widget">
                         Phone:  <a href="tel: ++880 153-229-7554">+880 153-229-7554</a>
                         </div>
-                        
-                        <div className="find-widget">
-                        Website:  <a href="#">www.mosiurrahman.dev</a>
-                        </div>
-                        <div className="find-widget">
-                        Available: Mon to Sat: 09:30 AM - 10.30 PM.
-                        </div>
                     </div>
                     {/* <!-- contact form --> */}
 
                     <div className="col-md-6 wow pl-5 pr-0 animated fadeInRight" data-wow-delay=".2s">
-                        <form className="shake" role="form" onSubmit={sendEmail} id="contactForm" name="contact" data-toggle="validator">
+                        <form onSubmit={sendEmail} id="contactForm" name="contact">
                             {/* <!-- Name --> */}
                             <div className="form-group label-floating">
                                 <label className="control-label" for="name">Name</label>
